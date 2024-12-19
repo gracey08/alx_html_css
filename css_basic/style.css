@@ -1,0 +1,57 @@
+/* Customize body background and text color */
+body {
+    background-color: #f4f4f9; /* Light gray */
+    color: #333333; /* Dark gray */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add borders and padding to sections */
+section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* White background */
+}
+/* Article styling */
+article {
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #2e7d32; /* Dark green */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+article ul {
+    list-style: square;
+    padding-left: 20px;
+}
+.logo {
+    font-size: 2em; /* Make it larger */
+    color: #ff5722; /* Bright orange */
+    margin-right: 15px; /* Add spacing */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
