@@ -3,100 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="base.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">   
-    <title>Make a cool first webpage</title>    
+    <title>CSS Advanced</title>
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="works_on_smartphone">
-
-        <header>
-            <nav>
-                <ul>
-                    <li class="logo">&#9733;</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="base_index.html">Base_index</a></li>
-                    <li><a href="tweets.html">Tweets</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h1>Welcome to My Webpage</h1>
-            <p>This webpage demonstrates the use of various HTML elements such as headings, paragraphs, and clickable images. HTML allows you to structure your content efficiently and add interactivity where needed. Below, you will find sections with subheadings and details to explore.</p>
-
-            <article>
-                <h2>About HTML</h2>
-                <p>HTML stands for HyperText Markup Language and is the standard markup language used to create web pages. It provides the structure of a webpage, while CSS and JavaScript handle its presentation and functionality. Understanding HTML is the first step towards becoming a web developer.</p>
-    
-                <h2>Embedded Tweet</h2>
-                <p>
-                    Below is an example of an embedded tweet:
-                </p>
-                
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">JUST IN!!<br><br>WAEC commences nationwide strike over minimum wage short-change today. <br><br>Threatens mother of all strikes tomorrow. <a href="https://t.co/eIoNfL5Mw6">pic.twitter.com/eIoNfL5Mw6</a></p>&mdash; 99% OPPRESSED. (@PIDOMNIGERIA) <a href="https://twitter.com/PIDOMNIGERIA/status/1866179750718292394?ref_src=twsrc%5Etfw">December 9, 2024</a>
-                </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-                <h2>Back to Tweetpage</h2>
-                <p>If you'd like to return to the main Tweetpage, click the link below:</p>
-                <a href="tweets.html" class="back-home">Go to Tweetpage</a>
-    
-                <h2>Benefits of Learning HTML</h2>
-                <h3>Essential for Web Development</h3>
-                <p>HTML is the foundation of web development. Every webpage you interact with relies on HTML for its structure. Learning HTML is essential for creating web content, structuring layouts, and making your website accessible to users worldwide.</p>
-    
-                <h3>Enables Creativity</h3>
-                <p>By mastering HTML, you can express your creativity through website design. You can combine it with CSS for beautiful designs and JavaScript for interactive features, bringing your ideas to life on the web.</p>
-    
-                <h2>Clickable Image Example</h2>
-                <p>Click the image below to visit a popular search engine:</p>
-                <a href="https://www.google.com" target="_blank">
-                    <img src="img/myimage.jpg" alt="Google img">
-                </a>
-                <h2>Learners Information</h2>
-                <table></table>
-                    <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John</td>
-                            <td>25</td>
-                            <td>USA</td>
-                        </tr>
-                        <tr>
-                            <td>Emily</td>
-                            <td>28</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>Michael</td>
-                            <td>32</td>
-                            <td>Australia</td>
-                        </tr>
-                        <tr>
-                            <td>Sophia</td>
-                            <td>21</td>
-                            <td>UK</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-
-            <aside>
-                placeholder to add comment thread later.
-            </aside>
-        </main>
-        
-        <footer>
-            <p>Made by MAYUNGBE TOLULOPE - <a href="https://samuel-enyi-portfolo.netlify.app/" target="_blank">here</a>.</p>
-        </footer>
-
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section>
+            <div id="tittle1">
+                <h1>Get Schooled</h1>
+                <div id="text1">
+                    <span>SMILES</span>
+                    <span>GRIN</span>
+                    <span>LAUGH</span>
+                </div>
+                <button>Register for free</button>
+            </div>
+            <div id="tittle2">
+                <h2><span style="color: #C271FF; font-weight: bold;">Learn</span> from the pros</h2>
+                <div id="text2">
+                    <div>
+                        <img src="1.png" alt="Phillip">
+                        <h3>Phillip Massey</h3>
+                        <p>« Smile of the year » 2018 - 2019</p>
+                    </div>
+                    <div>
+                        <img src="3.png" alt="Nannie">
+                        <h3>Nannie Lawrence</h3>
+                        <p>Best « little smile » 2017</p>
+                    </div>
+                    <div>
+                        <img src="2.png" alt="Bruce">
+                        <h3>Bruce Walters</h3>
+                        <p>Best « Friend Smile » live performance 2019</p>
+                    </div>
+                    <div>
+                        <img src="4.png" alt="Henry">
+                        <h3>Henry Hughes</h3>
+                        <p>« 24h smiles » winner 2016 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quote">
+            <img src="5.png" alt="Alex">
+            <div>
+                <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
+                <h3>Alex Morgan</h3>
+                <P>weather presenter</P>
+            </div>
+        </section>
+        <section class="tutorials">
+            <h2>Most <span style="color: #C271FF; font-weight: bold;">popular</span> tutorials</h2>
+            <div class="tutorials2">
+                <div class="tutorials3">
+                    <div class="image-container">
+                            <img src="9.png" alt="Diagonal Smile" class="background-image">
+                            <img src="play.png" alt="Overlay Image" class="overlay-image">
+                    </div> 
+                    <h3>Diagonal Smile</h3>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="tot"> 
+                        <div class="tutorials4">
+                            <img src="1.png" alt="">
+                            <h4>Phillip Massey</h4>
+                    </div>
+                        <div class="ico">
+                            <div class="icon">
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <p>8 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorials3">
+                    <div class="image-container">
+                            <img src="7.png" alt="Diagonal Smile" class="background-image">
+                            <img src="play.png" alt="Overlay Image" class="overlay-image">
+                    </div> 
+                    <h3>Diagonal Smile</h3>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="tot"> 
+                        <div class="tutorials4">
+                            <img src="1.png" alt="">
+                            <h4>Phillip Massey</h4>
+                    </div>
+                        <div class="ico">
+                            <div class="icon">
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <p>8 min</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="tutorials3">
+                        <div class="image-container">
+                                <img src="8.png" alt="Diagonal Smile" class="background-image">
+                                <img src="play.png" alt="Overlay Image" class="overlay-image">
+                        </div> 
+                        <h3>Diagonal Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="tot"> 
+                            <div class="tutorials4">
+                                <img src="1.png" alt="">
+                                <h4>Phillip Massey</h4>
+                        </div>
+                            <div class="ico">
+                                <div class="icon">
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                </div>
+                                <p>8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutorials3">
+                        <div class="image-container">
+                                <img src="6.png" alt="Diagonal Smile" class="background-image">
+                                <img src="play.png" alt="Overlay Image" class="overlay-image">
+                        </div> 
+                        <h3>Diagonal Smile</h3>
+                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="tot"> 
+                            <div class="tutorials4">
+                                <img src="1.png" alt="">
+                                <h4>Phillip Massey</h4>
+                        </div>
+                            <div class="ico">
+                                <div class="icon">
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                    <div><i class="fa-solid fa-star"></i></div>
+                                </div>
+                                <p>8 min</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+            <section class="membership">
+                <h2><span style="color: #C271FF; font-weight: bolder;">Free </span> membership</h2>
+                <div class="member">
+                    <div>
+                        <img src="smile.png" alt="smile">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <img src="smile.png" alt="smile">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <img src="smile.png" alt="smile">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <img src="smile.png" alt="smile">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <button>REGISTER FOR FREE</button>
+            </section>
+            <section class="faq">
+                <h2>F.A.Q</h2>
+                <div class="faq1">
+                    <div class="faq2">
+                        <div class="faq3">
+                            <div>   
+                                <h3>How does this work?</h3>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                        <div class="faq3">
+                           <div>
+                                <h3>How does this work?</h3>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="faq2">
+                        <div class="faq3">
+                            <div>   
+                                <h3>How does this work?</h3>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                        <div class="faq3">
+                           <div>
+                                <h3>How does this work?</h3>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div>
+            <img src="logo.png" alt="logo">
+            <div style="color: white; width: 100px;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <p>©smileschool 2020</p>
+    </footer>
 </body>
 </html>

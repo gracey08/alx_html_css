@@ -55,3 +55,68 @@ article ul {
         width: 95%;
     }
 }
+/* General FAQ Section Styling */
+.faq {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Match background from Figma */
+    text-align: center;
+}
+
+.faq h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    color: #333; /* Heading color */
+    margin-bottom: 1.5rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Align questions and answers to the left */
+}
+
+/* Individual FAQ Item */
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd; /* Divider between questions */
+    padding-bottom: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.faq-question h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: #007bff; /* Accent color for the toggle */
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none; /* Hidden by default */
+    margin-top: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* FAQ Active State */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg); /* Change '+' to 'x' or rotate to indicate open */
+}
