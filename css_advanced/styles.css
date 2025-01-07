@@ -6,7 +6,7 @@
 
 header {
     position: relative; /* Enables absolute positioning for children */
-	background-image: url('/img/object.png'); /* Replace with your background image URL */
+	background-image: url('./img/object.png'); /* Replace with your background image URL */
 	background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Centers the background image */
     color: white; /* Sets text color to white for better contrast */
