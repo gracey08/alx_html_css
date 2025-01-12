@@ -1,0 +1,318 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary-color: #FF6565; /* Example: hover/active color */
+    --secondary-color: #333333; /* Example: text color */
+    --background-color: #f9f9f9; /* Example: background */
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px; /* Content maximum width */
+  }
+  /* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+  }
+  
+  .site-header {
+    background-image: url('./assests/images/headphones_hero_1.jpg');
+    color: white;
+    padding: 1rem 0;
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center;
+    height: 110vh;
+  }
+  .header-content {
+    text-align: center; /* Center all child elements */
+    padding: 60px 20px; /* Add space around the content */
+    font-family: Arial, sans-serif; /* Use clean font */
+}
+.header-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #faf9f9;
+}
+h4 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+	
+	font-family: sans-serif;
+	font-size: 2.0em;
+	font-weight: bolder;
+	margin-top: 60vh;
+	color: white;
+  text-align: center;
+  padding: 0px 20px;
+}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 50px;
+    max-width: 100%;
+  }
+  
+  /* Navigation */
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #ff6565;
+  }
+  
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  main {
+    padding: 0px;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 10vh; /* Full viewport height */
+  padding: 50px; /* Add padding for spacing */
+  box-sizing: border-box;
+  }
+  
+  .what-we-do h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px; /* Space between h2 and p */
+  }
+  
+  .what-we-do-content {
+    display: flex;
+    justify-content: center; /* Space between items */
+    gap: 20px; /* Adjust spacing between items */
+    margin-top: 120px; /* Add spacing above the row */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+  }
+  .what-we-do-content img { 
+    height: 70px;
+  }
+  .what-we-do-content .section2 {
+  font-size: 1.0rem;
+  color: #555;
+  max-width: 200px; 
+  align-items: center;/* Limit the paragraph width for readability */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .what-we-do {
+      padding: 30px; /* Reduce padding for smaller screens */
+    }
+  
+    .what-we-do-content {
+      margin-top: 40px; /* Adjust margin top for smaller screens */
+    }
+  }
+  
+  /* Responsive Design for Phones */
+  @media screen and (max-width: 480px) {
+    .what-we-do h2 {
+      font-size: 1.5rem; /* Reduce font size for better readability */
+    }
+  
+    .what-we-do-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 15px; /* Adjust gap between items */
+      margin-top: 30px; /* Further reduce margin top for smaller screens */
+    }
+  
+    .what-we-do-content .section2 {
+      max-width: 100%; /* Allow text to take full width on smaller screens */
+    }
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-nav {
+      display:none;
+      flex-direction: column;
+      position:fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .menu-toggle:checked + .menu-icon + .main-nav {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+    .content {
+      max-width: 50px; /* Increase width for larger screens */
+      padding: 40px; /* Add more padding for spacious layout */
+      display: inline-flex;
+    }
+    .content h1 {
+      font-size: 2.5rem; /* Increase font size */
+    }
+
+    .content p {
+      font-size: 1.2rem; /* Increase font size for readability */
+    }
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 29px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    margin-bottom: 50px; /* Adds full space above CTA */
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.9;
+  }
+  @media screen and (min-width: 1200px) {
+    .content {
+      max-width: 400px; /* Increase width for larger screens */
+      padding: 40px; /* Add more padding for spacious layout */
+      display: inline-flex;
+    }
+    .content h1 {
+      font-size: 2.5rem; /* Increase font size */
+    }
+
+    .content p {
+      font-size: 1.2rem; /* Increase font size for readability */
+    }
+  }
+  .our-results {
+    height: 60vh;
+    text-align: center;
+    background-image: url('./assests/images/headphones_hero_2.jpg');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center;
+  }
+  
+  .our-results-content h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+  
+  .our-results-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Pentagon Container */
+  .pentagon-row {
+    display: flex;
+    justify-content: space-evenly; /* Space out pentagons evenly */
+    gap: 20px; /* Gap between the pentagons */
+    flex-wrap: wrap; /* Ensure the pentagons wrap on smaller screens */
+  }
+  
+  .pentagon {
+    position: relative;
+    width: 190px;
+    height: 150px;
+    background-image: url('./assests/images/pentagone.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pentagon span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Percentage Styling */
+  .pentagon span strong {
+    font-size: 1.3rem;
+    margin-bottom: 2px; /* Space between percentage and "Efficiency" */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .pentagon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pentagon span {
+      font-size: 0.8rem;
+    }
+  
+    .pentagon span strong {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .pentagon-row {
+      flex-direction: column; /* Stack pentagons vertically on small screens */
+      align-items: center;
+    }
+  }
