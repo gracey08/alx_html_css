@@ -102,43 +102,38 @@ main {
 }
 
 .what-we-do {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-height: 12vh; /* Full viewport height */
-padding: 50px; /* Add padding for spacing */
-box-sizing: border-box;
-}
-
-.what-we-do h2 {
-font-size: 2rem;
-color: #333;
-margin-bottom: 10px; /* Space between h2 and p */
-animation: fade-slide 2s ease-in-out;
-}
-
-.what-we-do-content {
   display: flex;
-  justify-content: center; /* Space between items */
-  gap: 20px; /* Adjust spacing between items */
-  margin-top: 150px; /* Add spacing above the row */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
-}
-.what-we-do-content img { 
-  height: 70px;
-}
-.what-we-do-content h2 {
   text-align: center;
-}
-.what-we-do-content .section2 {
-font-size: 1.0rem;
-color: #555;
-max-width: 200px; 
-align-items: center;/* Limit the paragraph width for readability */
-}
+  height: 10vh; /* Full viewport height */
+  padding: 50px; /* Add padding for spacing */
+  box-sizing: border-box;
+  }
+  
+  .what-we-do h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px; /* Space between h2 and p */
+  }
+  
+  .what-we-do-content {
+    display: flex;
+    justify-content: center; /* Space between items */
+    gap: 20px; /* Adjust spacing between items */
+    margin-top: 120px; /* Add spacing above the row */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+  }
+  .what-we-do-content img { 
+    height: 70px;
+  }
+  .what-we-do-content .section2 {
+  font-size: 1.0rem;
+  color: #555;
+  max-width: 200px; 
+  align-items: center;/* Limit the paragraph width for readability */
+  }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
